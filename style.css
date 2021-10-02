@@ -18,12 +18,28 @@ footer {
 .info {
       font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 }
-.opciones {
-      height: 30px;
+.contenido {
+      
       text-align: center;
       background: #2C0F55;
       color: white;
       font-size: 20px;
+}
+
+.map {
+    text-align: center
+
+}
+
+.svgMap {
+    text-align: center;
+}
+
+#svgDiv {
+    height: 1200px;
+
+}
+
       
       
       
