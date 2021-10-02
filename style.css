@@ -1,0 +1,30 @@
+header {
+    display: block;
+    padding: 0px;
+    text-align: center;
+    background: #4E1B97;
+    color: white;
+    font-size: 20px;
+}
+  
+footer {
+      display: block;
+      background: #4E1B97;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+  }
+.info {
+      font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+.opciones {
+      height: 30px;
+      text-align: center;
+      background: #2C0F55;
+      color: white;
+      font-size: 20px;
+      
+      
+      
+}
