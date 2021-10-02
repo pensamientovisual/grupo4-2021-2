@@ -18,11 +18,11 @@ footer {
 .info {
       font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 }
-.contenido {
+#contenido {
       
       text-align: center;
-      background: #2C0F55;
-      color: white;
+      background:gray;
+      
       font-size: 20px;
 }
 
@@ -35,9 +35,10 @@ footer {
     text-align: center;
 }
 
-#svgDiv {
-    height: 1200px;
-
+#info {
+    text-align: center;
+    color: black
+    
 }
 
       
