@@ -21,7 +21,7 @@ footer {
 #contenido {
       
       text-align: center;
-      background:gray;
+      background: white;
       
       font-size: 20px;
 }
@@ -41,7 +41,11 @@ footer {
     
 }
 
-      
-      
-      
+.recuadro{
+    text-align: center;
 }
+
+
+      
+      
+      

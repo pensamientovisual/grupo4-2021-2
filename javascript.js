@@ -1,10 +1,26 @@
+function fxn(){
+    
+    document.getElementById("svgDiv_pop").style.display = "none";
+    document.getElementById("svgDiv_av").style.display = "none";
+    document.getElementById("svgDiv_viv").style.display = "none";
+
+}
+
+window.addEventListener('load', fxn);
+
 function rm(){
     document.getElementById("nombre_region").innerHTML = "RM"
     document.getElementById("areas_verdes").innerHTML = "m2 = 384"
+    document.getElementById("pob_migrante").innerHTML = "Cantidad = 9988 personas"
+    document.getElementById("viv_colectivas").innerHTML = "Cantidad = 94392 viviendas"
+
+
 }
 function valp(){
     document.getElementById("nombre_region").innerHTML = "Valparaiso"
     document.getElementById("areas_verdes").innerHTML = "m2 = 7654"
+    document.getElementById("pob_migrante").innerHTML = "Cantidad = 4328 personas"
+    document.getElementById("viv_colectivas").innerHTML = "Cantidad = 38292 viviendas"
 }
 
 
@@ -14,8 +30,33 @@ function limpiar(){
 
 }
 
-function color1 (){
-    document.getElementsById("").style.fill = "pink"
+function bot_pop(){ //rosado
+    document.getElementById("svgDiv").style.display = "none";
+    document.getElementById("svgDiv_pop").style.display = "block";
+    document.getElementById("svgDiv_av").style.display = "none";
+    document.getElementById("svgDiv_viv").style.display = "none";
+
+    //document.getElementsById("svgDiv").innerHTML = document.getElementById("svgDiv_pop").innerHTML;
+    //document.getElementById("svgDiv").style.display = "block";
+
+}
+
+function bot_av(){  //verde
+    document.getElementById("svgDiv").style.display = "none";
+    document.getElementById("svgDiv_pop").style.display = "none";
+    document.getElementById("svgDiv_av").style.display = "block";
+    document.getElementById("svgDiv_viv").style.display = "none";
+
+    //document.getElementsById("svgDiv").innerHTML = document.getElementById("svgDiv_av").innerHTML;
+}
+
+function bot_viv(){ //rojo
+    document.getElementById("svgDiv").style.display = "none";
+    document.getElementById("svgDiv_pop").style.display = "none";
+    document.getElementById("svgDiv_av").style.display = "none";
+    document.getElementById("svgDiv_viv").style.display = "block";
+    //document.getElementById("svgDiv").style.display = "none";
+    //document.getElementsById("svgDiv").innerHTML = document.getElementById("svgDiv2").innerHTML
 }
 
 
