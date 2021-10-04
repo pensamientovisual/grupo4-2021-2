@@ -1,6 +1,33 @@
 function rm(){
+    document.getElementById("nombre_region").innerHTML = "RM"
+    document.getElementById("areas_verdes").innerHTML = "m2 = 384"
+}
+function valp(){
+    document.getElementById("nombre_region").innerHTML = "Valparaiso"
+    document.getElementById("areas_verdes").innerHTML = "m2 = 7654"
+}
+
+
+function limpiar(){
+    document.getElementById("nombre_region").innerHTML = ""
+    document.getElementById("areas_verdes").innerHTML = ""
 
 }
+
+function color1 (){
+    document.getElementsById("").style.fill = "pink"
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 function fxnboton(){
@@ -13,7 +40,7 @@ function fxnboton(){
 }
 
 function cambiar(){
-    document.getElementById("titulo").innerHTML = "hola hola ratón con cola"
+    document.getElementById("titulo").innerHTML = "hhola ratola ón con cola"
 }
 
 function color(){
