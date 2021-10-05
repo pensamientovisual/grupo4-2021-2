@@ -1,4 +1,4 @@
-function fxn(){
+function start(){
     
     document.getElementById("svgDiv_pop").style.display = "none";
     document.getElementById("svgDiv_av").style.display = "none";
@@ -6,7 +6,9 @@ function fxn(){
 
 }
 
-window.addEventListener('load', fxn);
+window.addEventListener('load', start);
+
+
 
 function rm(){
     document.getElementById("nombre_region").innerHTML = "RM"
@@ -25,8 +27,11 @@ function valp(){
 
 
 function limpiar(){
-    document.getElementById("nombre_region").innerHTML = ""
-    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("nombre_region").innerHTML = " "
+    document.getElementById("areas_verdes").innerHTML = " "
+    document.getElementById("pob_migrante").innerHTML = " "
+    document.getElementById("viv_colectivas").innerHTML = " "
+
 
 }
 

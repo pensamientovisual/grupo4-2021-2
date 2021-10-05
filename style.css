@@ -37,12 +37,18 @@ footer {
 
 #info {
     text-align: center;
-    color: black
+    color: black;
     
 }
 
-.recuadro{
+#recuadro{
     text-align: center;
+    background: white;
+    justify-content: center;
+    float: center;
+    align-items: center;
+    
+
 }
 
 
