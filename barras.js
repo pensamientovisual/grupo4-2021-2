@@ -9,7 +9,7 @@ var svg = d3.select("body").append("svg")
 	.append("g")
     .attr("transform", "translate(70,50)");
 
-d3.tsv("VotingInformation.tsv", function(error, data){
+d3.tsv("bd.tsv", function(error, data){
 
 	// filter year
 	var data = data.filter(function(d){return d.Year == '2012';});
@@ -60,7 +60,7 @@ d3.tsv("VotingInformation.tsv", function(error, data){
 		.attr("fill", "black")
 		.attr("transform","translate(-40, -20)")
 		.style("font-size", "11px")
-		.text("Habitantes / m3");
+		.text("Porcentaje");
 
 	svg.selectAll("rectangle")
 		.data(data)

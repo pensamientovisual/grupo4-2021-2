@@ -1,100 +1,162 @@
 function start(){
-    
+    document.getElementById("svgDiv").style.display = "none";
     document.getElementById("svgDiv_pop").style.display = "none";
-    document.getElementById("svgDiv_av").style.display = "none";
+    document.getElementById("svgDiv_av").style.display = "block";
     document.getElementById("svgDiv_viv").style.display = "none";
 
 }
 
 window.addEventListener('load', start);
 
-
-
-function rm(){
-    document.getElementById("nombre_region").innerHTML = "RM"
-    document.getElementById("areas_verdes").innerHTML = "m2 = 384"
-    document.getElementById("pob_migrante").innerHTML = "Cantidad = 9988 personas"
-    document.getElementById("viv_colectivas").innerHTML = "Cantidad = 94392 viviendas"
-
-
+//limpiar info al sacar cursor del mapa
+function limpiar(){
+    document.getElementById("nombre_region").innerHTML = " "
+    document.getElementById("areas_verdes").innerHTML = " "
+    document.getElementById("pob_migrante").innerHTML = " "
+    document.getElementById("viv_colectivas").innerHTML = " "
 }
-function valp(){
+
+//regiones
+
+function ap(){
+    document.getElementById("nombre_region").innerHTML = "Arica y Parinacota"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""
+}
+
+function ta(){
+    document.getElementById("nombre_region").innerHTML = "Tarapacá"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""
+}
+
+function an(){
+    document.getElementById("nombre_region").innerHTML = "Antofagasta"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""
+}
+
+function at(){
+    document.getElementById("nombre_region").innerHTML = "Atacama"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""
+}
+
+function co(){
+    document.getElementById("nombre_region").innerHTML = "Coquimbo"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""
+}
+
+function va(){
     document.getElementById("nombre_region").innerHTML = "Valparaiso"
     document.getElementById("areas_verdes").innerHTML = "m2 = 7654"
     document.getElementById("pob_migrante").innerHTML = "Cantidad = 4328 personas"
     document.getElementById("viv_colectivas").innerHTML = "Cantidad = 38292 viviendas"
 }
 
-
-function limpiar(){
-    document.getElementById("nombre_region").innerHTML = " "
-    document.getElementById("areas_verdes").innerHTML = " "
-    document.getElementById("pob_migrante").innerHTML = " "
-    document.getElementById("viv_colectivas").innerHTML = " "
-
-
+function rm(){
+    document.getElementById("nombre_region").innerHTML = "Metropolitana"
+    document.getElementById("areas_verdes").innerHTML = "m2 = 384"
+    document.getElementById("pob_migrante").innerHTML = "Cantidad = 9988 personas"
+    document.getElementById("viv_colectivas").innerHTML = "Cantidad = 94392 viviendas"
 }
 
+function li(){
+    document.getElementById("nombre_region").innerHTML = "O'Higgins"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""
+}
+
+function ml(){
+    document.getElementById("nombre_region").innerHTML = "Maule"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""
+}
+
+function nb(){
+    document.getElementById("nombre_region").innerHTML = "Ñuble"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""
+}
+
+function bi(){
+    document.getElementById("nombre_region").innerHTML = "Biobío"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""    
+}
+
+function ar(){
+    document.getElementById("nombre_region").innerHTML = "La Araucania"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = "" 
+}
+
+function lr(){
+    document.getElementById("nombre_region").innerHTML = "Los Ríos"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = ""     
+}
+
+function ll(){
+    document.getElementById("nombre_region").innerHTML = "Los Lagos"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = "" 
+}
+
+function ai(){
+    document.getElementById("nombre_region").innerHTML = "Aysén"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = "" 
+}
+
+function ma(){
+    document.getElementById("nombre_region").innerHTML = "Magallanes y Antártica"
+    document.getElementById("areas_verdes").innerHTML = ""
+    document.getElementById("pob_migrante").innerHTML = ""
+    document.getElementById("viv_colectivas").innerHTML = "" 
+}
+
+
+
+
+
+
+//botones mapas
+
 function bot_pop(){ //rosado
-    document.getElementById("svgDiv").style.display = "none";
+    //document.getElementById("svgDiv").style.display = "none";
     document.getElementById("svgDiv_pop").style.display = "block";
     document.getElementById("svgDiv_av").style.display = "none";
     document.getElementById("svgDiv_viv").style.display = "none";
-
-    //document.getElementsById("svgDiv").innerHTML = document.getElementById("svgDiv_pop").innerHTML;
-    //document.getElementById("svgDiv").style.display = "block";
-
 }
 
 function bot_av(){  //verde
-    document.getElementById("svgDiv").style.display = "none";
+    //document.getElementById("svgDiv").style.display = "none";
     document.getElementById("svgDiv_pop").style.display = "none";
     document.getElementById("svgDiv_av").style.display = "block";
-    document.getElementById("svgDiv_viv").style.display = "none";
-
-    //document.getElementsById("svgDiv").innerHTML = document.getElementById("svgDiv_av").innerHTML;
+    document.getElementById("svgDiv_viv").style.display = "none";  
 }
 
 function bot_viv(){ //rojo
-    document.getElementById("svgDiv").style.display = "none";
+    //document.getElementById("svgDiv").style.display = "none";
     document.getElementById("svgDiv_pop").style.display = "none";
     document.getElementById("svgDiv_av").style.display = "none";
     document.getElementById("svgDiv_viv").style.display = "block";
-    //document.getElementById("svgDiv").style.display = "none";
-    //document.getElementsById("svgDiv").innerHTML = document.getElementById("svgDiv2").innerHTML
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-function fxnboton(){
-    var x = document.getElementById("trekking");
-    if (x.style.display === "none") {
-    x.style.display = "block";
-    } else {
-    x.style.display = "none";
-  }
-}
-
-function cambiar(){
-    document.getElementById("titulo").innerHTML = "hhola ratola ón con cola"
-}
-
-function color(){
-    //document.getElementById("botones").style.backgroundColor="black"
-    var x = document.getElementById("botones")
-    if (x.style.backgroundColor === "lightgreen"){
-        x.style.backgroundColor = "black"
-    }else{
-        x.style.backgroundColor = "lightgreen"
-    }
-}
+//////////// grafico barras
