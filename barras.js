@@ -7,7 +7,7 @@ var svg = d3.select("body").append("svg")
 	.attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
 	.append("g")
-    .attr("transform", "translate(70,50)");
+    .attr("transform", "translate(520,50)");
 
 d3.tsv("bd.tsv", function(error, data){
 
