@@ -15,26 +15,36 @@
     <div id="titulo" class="header">
         
         
-        <h1 style="position:relative;top:20px;left:20px">Inmigración y estándares urbanos en Chile</h1>
+        <h1 style="position:relative;top:15px;left:20px">Inmigración y estándares urbanos en Chile</h1>
+        <h3 style="position:relative;top:-8px;left:20px">Una visualización interactiva de datos</h3>
 
     </div>
 
     <div id="intro" style="position: relative;top:-20px;">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus leo eu magna viverra, sed luctus nisi faucibus. Aenean ultrices ligula ex, ac maximus felis aliquet et. Proin placerat faucibus ultricies. In magna leo, gravida in consectetur eu, blandit a tellus. Fusce nec euismod ante. Sed ac purus tristique, bibendum ex a, sagittis mi. Sed dictum turpis sed tristique euismod. Vestibulum vestibulum condimentum mi quis blandit.
-            Suspendisse vulputate tincidunt risus, eu viverra tortor aliquam at. Aliquam euismod eros a arcu placerat, vitae tristique augue ornare. Curabitur sed lobortis est. Duis sollicitudin augue ac justo rutrum, in accumsan sapien convallis. In condimentum ornare sem, ac vehicula orci gravida id. Sed congue id justo sed viverra. Ut eleifend nec lorem sed ornare. </p>
-    </div>
-
-    <div id="botones"> 
-        <button onClick="bot_av()">Áreas verdes</button>
-        <button onClick="bot_pop()">Población Migrante</button>
-        <button onClick="bot_viv()">Viviendas colectivas</button>
+        <p style="text-align:justify;">Todo el tiempo Chile está recibiendo inmigrantes que llegan
+             al país buscando quedarse y formar una nueva vida.Con
+             el interés de conocer la calidad de vida de los inmigrantes,
+              decidimos evaluar distintos estándares urbanos de cada región
+               comparándola con la distribución de los inmigrantes a través del país. 
+               Los escogidos fueron la cantidad de parques medidos en metros cuadrados
+                y la cantidad de viviendas sociales. El análisis de los datos se realizará 
+                en dos instancias, la primera con una representación visual en el mapa 
+                chileno y la segunda a través de un gráfico interactivo.</p>
     </div>
 
     
 
+    
+
     <div id="mapas" > <!-- no sacar svgDiv-->
-        
-        <div id="recuadro" style="width:500px;height:220px;border:3px solid #000;fill:white;position:absolute;top:400px;left:300px">  
+
+        <div id="botones"> 
+            <button style="height:40px;width:150px" onClick="bot_av()">Áreas verdes</button>
+            <button style="height:40px;width:150px" onClick="bot_pop()">Población Migrante</button>
+            <button style="height:40px;width:150px" onClick="bot_viv()">Viviendas colectivas</button>
+        </div>
+
+        <div id="recuadro" style="width:500px;height:220px;border:3px solid #000;fill:white;position:absolute;left:5cm;top:13cm">  
             <h2 id="nombre_region">Nombre region</h1>
             <h3 id="areas_verdes">Áreas verdes</h3>
             <h3 id="pob_migrante">Poblacion inmigrante</h3>
@@ -884,8 +894,8 @@
 
     <footer id="piepag" class="footer">
 
-        <h3>Grupo 4</h3>
-        <h3>Barbara - Josefa - Ignacio</h3>
+        <h3 style="position:relative;top:15px">Grupo 4</h3>
+        <h3 style="position:relative;top:20px">Bárbara Olcay - Josefa Mingo- Ignacio Villanueva</h3>
            
     </div>
 

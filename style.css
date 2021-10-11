@@ -6,13 +6,14 @@
     color: white;
     font-size: 20px;
     font-family: Verdana;
-    height: 100px;
+    height: 120px;
 }
 
 
   
 footer {
       display: block;
+      height: 140px;
       background: #4E1B97;
       color: white;
       font-size: 20px;
@@ -57,7 +58,7 @@ footer {
 }
 
 .rectangle {
-	fill:#0052a1;
+	fill: rgb(10, 100, 80);
 }
 .rectangle:hover {
 	fill: orange;
