@@ -19,12 +19,12 @@
         <h3 style="position:relative;top:-8px;left:20px">Una visualización interactiva de datos</h3>
 
     </div>
-
-    <div id="intro" style="position: relative;top:-20px;height:600px">
-        <table width="50%" align="left" border="10" cellspacing="10" cellpadding="10">
+    
+    <div id="intro" style="position: relative;top:-20px;height:400px;float:left;clear:none;background:#e3f2ff">
+        <table width="50%" align="left" cellspacing="10" cellpadding="10">
         <tr>
         <td>
-        <p>Todo el tiempo Chile está recibiendo inmigrantes que llegan
+        <p style="text-align:justify;">Todo el tiempo Chile está recibiendo inmigrantes que llegan
         al país buscando quedarse y formar una nueva vida. Con
         el interés de conocer la calidad de vida de los inmigrantes,
         decidimos evaluar distintos estándares urbanos de cada región
@@ -36,24 +36,18 @@
         </td>
         </tr>
         </table>
-        <button style="height:40px;width:150px;position:relative;left:200px;top:100px" onClick="document.getElementById('mapas').scrollIntoView();">Ir a probar</button>
+        <button style="height:40px;width:150px;position:relative;left:250px;top:150px" onClick="document.getElementById('recuadro').scrollIntoView();">VER MAPAS</button>
+        <button style="height:40px;width:150px;position:relative;left:250px;top:150px" onClick="document.getElementById('barras').scrollIntoView();">VER BARRAS</button>
 
     </div>
-
-    
-
-    
-
-    
-
-    <div id="mapas" > <!-- no sacar svgDiv-->
+    <div id="mapas"> <!-- no sacar svgDiv-->
 
         <div id="botones"> 
             <button style="height:40px;width:150px" onClick="bot_av()">Áreas verdes</button>
             <button style="height:40px;width:150px" onClick="bot_pop()">Población Migrante</button>
             <button style="height:40px;width:150px" onClick="bot_viv()">Viviendas colectivas</button>
         </div>
-        <br><br><br>
+        <br>
         <div id="recuadro" style="width:500px;height:220px;border:3px solid #000;fill:white;">  
             <h2 id="nombre_region">Nombre region</h1>
             <h3 id="areas_verdes">Áreas verdes</h3>
