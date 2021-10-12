@@ -20,7 +20,7 @@
 
     </div>
 
-    <div id="intro" style="position: relative;top:-20px;">
+    <div id="intro" style="position: relative;top:-20px;height:600px">
         <p style="text-align:justify;">Todo el tiempo Chile está recibiendo inmigrantes que llegan
              al país buscando quedarse y formar una nueva vida.Con
              el interés de conocer la calidad de vida de los inmigrantes,
@@ -30,7 +30,11 @@
                 y la cantidad de viviendas sociales. El análisis de los datos se realizará 
                 en dos instancias, la primera con una representación visual en el mapa 
                 chileno y la segunda a través de un gráfico interactivo.</p>
+
+        <button>irr o nose</button>
     </div>
+
+    
 
     
 
@@ -44,14 +48,14 @@
             <button style="height:40px;width:150px" onClick="bot_viv()">Viviendas colectivas</button>
         </div>
 
-        <div id="recuadro" style="width:500px;height:220px;border:3px solid #000;fill:white;position:absolute;left:5cm;top:13cm">  
+        <div id="recuadro" style="width:500px;height:220px;border:3px solid #000;fill:white;">  
             <h2 id="nombre_region">Nombre region</h1>
             <h3 id="areas_verdes">Áreas verdes</h3>
             <h3 id="pob_migrante">Poblacion inmigrante</h3>
             <h3 id="viv_colectivas">Viviendas colectivas</h3>
 
         </div>
-        <div id="svgDiv" class="svgMap"> 
+        <div id="svgDiv" class="svgMap" style="position:relative;top:-5cm"> 
 
             <div id="zoomInfo" style="display: none;">Mantén pulsada la tecla Ctrl mientras te desplazas para acercar o alejar el mapa</div>
             <?xml version="1.0" encoding="utf-8"?><!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -259,7 +263,7 @@
     </g>
         </svg></div>
 
-        <div id="svgDiv_pop" class="svgMap">
+        <div id="svgDiv_pop" class="svgMap" style="position:relative;top:-5cm">
 
             <div id="zoomInfo" style="display: none;">Mantén pulsada la tecla Ctrl mientras te desplazas para acercar o alejar el mapa</div>
             <?xml version="1.0" encoding="utf-8"?><!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -461,14 +465,14 @@
         
             </g>
             <g id="ISO-CL-NB" onMouseOver="nb()" onMouseOut="limpiar()">
-            <path fill="blue" stroke="#FFFFFF" stroke-width="0.5" d="M438,331c2-1,4,1,6,2c-2,0,0,1-1,2&#xD;&#xA;		c5.191,1.73,9.634-1.771,14.623-1.454L457,330.715l2.216-5.972l-0.696-1.539l-0.751-0.183l-1.795,2.684l-0.532-0.073l-2.958-2.134&#xD;&#xA;		l-2.382-0.953l-0.815-1.429l-2.491-0.092l-1.503-1.969l-1.007,1.951l-1.603-0.046l-2.821-1.41l-2.18-2.446l-1.456-0.65&#xD;&#xA;		l-0.721,5.862l-0.639,2.042C437.586,325.683,439.988,327.025,438,331z" />
+            <path fill="lightgray" stroke="#FFFFFF" stroke-width="0.5" d="M438,331c2-1,4,1,6,2c-2,0,0,1-1,2&#xD;&#xA;		c5.191,1.73,9.634-1.771,14.623-1.454L457,330.715l2.216-5.972l-0.696-1.539l-0.751-0.183l-1.795,2.684l-0.532-0.073l-2.958-2.134&#xD;&#xA;		l-2.382-0.953l-0.815-1.429l-2.491-0.092l-1.503-1.969l-1.007,1.951l-1.603-0.046l-2.821-1.41l-2.18-2.446l-1.456-0.65&#xD;&#xA;		l-0.721,5.862l-0.639,2.042C437.586,325.683,439.988,327.025,438,331z" />
 
 
             </g>
 
         </svg></div>
 
-        <div id="svgDiv_av" class="svgMap">
+        <div id="svgDiv_av" class="svgMap" style="position:relative;top:-5cm">
 
             <div id="zoomInfo" style="display: none;">Mantén pulsada la tecla Ctrl mientras te desplazas para acercar o alejar el mapa</div>
             <?xml version="1.0" encoding="utf-8"?><!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -670,13 +674,13 @@
 
             </g>
             <g id="ISO-CL-NB" onMouseOver="nb()" onMouseOut="limpiar()">
-            <path fill="red" stroke="#FFFFFF" stroke-width="0.5" d="M438,331c2-1,4,1,6,2c-2,0,0,1-1,2&#xD;&#xA;		c5.191,1.73,9.634-1.771,14.623-1.454L457,330.715l2.216-5.972l-0.696-1.539l-0.751-0.183l-1.795,2.684l-0.532-0.073l-2.958-2.134&#xD;&#xA;		l-2.382-0.953l-0.815-1.429l-2.491-0.092l-1.503-1.969l-1.007,1.951l-1.603-0.046l-2.821-1.41l-2.18-2.446l-1.456-0.65&#xD;&#xA;		l-0.721,5.862l-0.639,2.042C437.586,325.683,439.988,327.025,438,331z" />
+            <path fill="lightgray" stroke="#FFFFFF" stroke-width="0.5" d="M438,331c2-1,4,1,6,2c-2,0,0,1-1,2&#xD;&#xA;		c5.191,1.73,9.634-1.771,14.623-1.454L457,330.715l2.216-5.972l-0.696-1.539l-0.751-0.183l-1.795,2.684l-0.532-0.073l-2.958-2.134&#xD;&#xA;		l-2.382-0.953l-0.815-1.429l-2.491-0.092l-1.503-1.969l-1.007,1.951l-1.603-0.046l-2.821-1.41l-2.18-2.446l-1.456-0.65&#xD;&#xA;		l-0.721,5.862l-0.639,2.042C437.586,325.683,439.988,327.025,438,331z" />
 
 
             </g>
         </svg></div>
 
-        <div id="svgDiv_viv" class="svgMap">
+        <div id="svgDiv_viv" class="svgMap" style="position:relative;top:-5cm">
 
             <div id="zoomInfo" style="display: none;">Mantén pulsada la tecla Ctrl mientras te desplazas para acercar o alejar el mapa</div>
             <?xml version="1.0" encoding="utf-8"?><!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -878,7 +882,7 @@
 
             </g>
             <g id="ISO-CL-NB" onMouseOver="nb()" onMouseOut="limpiar()">
-            <path fill="red" stroke="#FFFFFF" stroke-width="0.5" d="M438,331c2-1,4,1,6,2c-2,0,0,1-1,2&#xD;&#xA;		c5.191,1.73,9.634-1.771,14.623-1.454L457,330.715l2.216-5.972l-0.696-1.539l-0.751-0.183l-1.795,2.684l-0.532-0.073l-2.958-2.134&#xD;&#xA;		l-2.382-0.953l-0.815-1.429l-2.491-0.092l-1.503-1.969l-1.007,1.951l-1.603-0.046l-2.821-1.41l-2.18-2.446l-1.456-0.65&#xD;&#xA;		l-0.721,5.862l-0.639,2.042C437.586,325.683,439.988,327.025,438,331z" />
+            <path fill="lightgray" stroke="#FFFFFF" stroke-width="0.5" d="M438,331c2-1,4,1,6,2c-2,0,0,1-1,2&#xD;&#xA;		c5.191,1.73,9.634-1.771,14.623-1.454L457,330.715l2.216-5.972l-0.696-1.539l-0.751-0.183l-1.795,2.684l-0.532-0.073l-2.958-2.134&#xD;&#xA;		l-2.382-0.953l-0.815-1.429l-2.491-0.092l-1.503-1.969l-1.007,1.951l-1.603-0.046l-2.821-1.41l-2.18-2.446l-1.456-0.65&#xD;&#xA;		l-0.721,5.862l-0.639,2.042C437.586,325.683,439.988,327.025,438,331z" />
 
 
             </g>
