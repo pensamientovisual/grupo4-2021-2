@@ -21,17 +21,23 @@
     </div>
 
     <div id="intro" style="position: relative;top:-20px;height:600px">
-        <p style="text-align:justify;">Todo el tiempo Chile está recibiendo inmigrantes que llegan
-             al país buscando quedarse y formar una nueva vida.Con
-             el interés de conocer la calidad de vida de los inmigrantes,
-              decidimos evaluar distintos estándares urbanos de cada región
-               comparándola con la distribución de los inmigrantes a través del país. 
-               Los escogidos fueron la cantidad de parques medidos en metros cuadrados
-                y la cantidad de viviendas sociales. El análisis de los datos se realizará 
-                en dos instancias, la primera con una representación visual en el mapa 
-                chileno y la segunda a través de un gráfico interactivo.</p>
+        <table width="50%" align="left" border="10" cellspacing="10" cellpadding="10">
+        <tr>
+        <td>
+        <p>Todo el tiempo Chile está recibiendo inmigrantes que llegan
+        al país buscando quedarse y formar una nueva vida. Con
+        el interés de conocer la calidad de vida de los inmigrantes,
+        decidimos evaluar distintos estándares urbanos de cada región
+        comparándola con la distribución de los inmigrantes a través del país. 
+        Los escogidos fueron la cantidad de parques medidos en metros cuadrados
+        y la cantidad de viviendas sociales. El análisis de los datos se realizará 
+        en dos instancias, la primera con una representación visual en el mapa 
+        chileno y la segunda a través de un gráfico interactivo.</p>
+        </td>
+        </tr>
+        </table>
+        <button style="height:40px;width:150px;position:relative;left:200px;top:100px" onClick="document.getElementById('mapas').scrollIntoView();">Ir a probar</button>
 
-        <button>irr o nose</button>
     </div>
 
     
@@ -47,7 +53,7 @@
             <button style="height:40px;width:150px" onClick="bot_pop()">Población Migrante</button>
             <button style="height:40px;width:150px" onClick="bot_viv()">Viviendas colectivas</button>
         </div>
-
+        <br><br><br>
         <div id="recuadro" style="width:500px;height:220px;border:3px solid #000;fill:white;">  
             <h2 id="nombre_region">Nombre region</h1>
             <h3 id="areas_verdes">Áreas verdes</h3>

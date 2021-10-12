@@ -2,7 +2,7 @@
     display: block;
     padding: 0px;
     text-align: left;
-    background: #4E1B97;
+    background: #0052a1;
     color: white;
     font-size: 20px;
     font-family: Verdana;
@@ -14,7 +14,7 @@
 footer {
       display: block;
       height: 140px;
-      background: #4E1B97;
+      background: #0052a1;
       color: white;
       font-size: 20px;
       text-align: center;
@@ -58,7 +58,7 @@ footer {
 }
 
 .rectangle {
-	fill: rgb(10, 100, 80);
+	fill: #003363ff;
 }
 .rectangle:hover {
 	fill: orange;
