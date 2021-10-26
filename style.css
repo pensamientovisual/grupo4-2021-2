@@ -1,12 +1,11 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 960px;
-    width: 1260px;
-    
-    
-    color: #000;
-}
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+    max-width: 1500px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0 20px 0;
+}/*hides tick marks on bottom xaxis */
 
 html {
     height: 100%;
@@ -25,7 +24,69 @@ html {
     height: 120px;
 }
 
+.axis line{
+    visibility:hidden;
+  }
 
+/* hides bottom xaxis line*/
+.axis .domain {
+display: none;
+}
+
+.axis {
+    font: 12.5px sans-serif;
+  }
+
+.yUnits {
+  font: 12.5px sans-serif;
+}
+
+.caption {
+  font: 12px sans-serif;
+}
+
+#titulo {
+    text-align: center;
+    margin: 150 0 75;
+    font-family: 'Inter', sans-serif;
+}
+
+.info_texto_chile{
+    background: none;
+    color: rgb(29, 20, 20);
+    margin: 2rem;
+    padding: 1rem ;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+
+}
+
+
+
+.bubbleChart{
+    min-width: 100px;
+    max-width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+
+
+.mas_info{
+    border-style: dashed;
+    border-width: 0.1rem;
+    border-color: #727272;
+    margin: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#intro{
+    font-size: 6mm;
+    display: block;
+    
+}
   
 footer {
       display: block;
@@ -73,28 +134,7 @@ footer {
 
 }
 
-.rectangle {
-	fill: #003363ff;
-}
-.rectangle:hover {
-	fill: orange;
-}
-.axis {
-  font: 10px sans-serif;
-}
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-#intro{
-    font-size: 7mm;
-    display: block;
-    
-}
 
 
 

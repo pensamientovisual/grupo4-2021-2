@@ -1,13 +1,13 @@
-var margin = {top: 90, right: 180, bottom: 70, left: 420},
-    width = 1280 - margin.left - margin.right,
-    height = 550 - margin.top - margin.bottom;
+var margin = {top: 30, right: 30, bottom: 70, left: 60},
+    width = 460 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
 
 //características body: gráfico
 var svg = d3.select("body").append("svg")
 	.attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
 	.append("g")
-    .attr("transform", "translate(600,50)");
+    .attr("transform", "translate(100,50)");
 
 d3.tsv("bd.tsv", function(error, data){
 

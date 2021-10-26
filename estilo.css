@@ -1,0 +1,66 @@
+body {
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+    max-width: 1500px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0 20px 0;
+}/*hides tick marks on bottom xaxis */
+.axis line{
+    visibility:hidden;
+  }
+
+/* hides bottom xaxis line*/
+.axis .domain {
+display: none;
+}
+
+.axis {
+    font: 12.5px sans-serif;
+  }
+
+.yUnits {
+  font: 12.5px sans-serif;
+}
+
+.caption {
+  font: 12px sans-serif;
+}
+
+#titulo {
+    text-align: center;
+    margin: 150 0 75;
+    font-family: 'Inter', sans-serif;
+}
+
+.info_texto_chile{
+    background: none;
+    color: rgb(29, 20, 20);
+    margin: 2rem;
+    padding: 1rem ;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+
+}
+
+
+
+.bubbleChart{
+    min-width: 100px;
+    max-width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+
+
+.mas_info{
+    border-style: dashed;
+    border-width: 0.1rem;
+    border-color: #727272;
+    margin: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
