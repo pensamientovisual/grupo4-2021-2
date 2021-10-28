@@ -23,6 +23,8 @@ function ap(){
     document.getElementById("areas_verdes").innerHTML = "Parques = 32 ha"
     document.getElementById("pob_migrante").innerHTML = "Inmigrantes = 25.680 personas"
     document.getElementById("viv_colectivas").innerHTML = "Cantidad = 299 viviendas"
+    document.getElementById("viv_colectivas").innerHTML = "Cantidad = 299 viviendas"
+
 }
 
 function ta(){
@@ -30,6 +32,8 @@ function ta(){
     document.getElementById("areas_verdes").innerHTML = "Parques = 46 ha"
     document.getElementById("pob_migrante").innerHTML = "Inmigrantes = 60.927 personas"
     document.getElementById("viv_colectivas").innerHTML = "Cantidad = 359 viviendas"
+    document.getElementById("CL-TA").color.fillColor = "white"
+
 }
 
 function an(){
@@ -55,7 +59,7 @@ function co(){
 
 function va(){
     document.getElementById("nombre_region").innerHTML = "Valparaiso"
-    document.getElementById("areas_verdes").innerHTML = "Parques = 579m2"
+    document.getElementById("areas_verdes").innerHTML = "Parques = 579 ha"
     document.getElementById("pob_migrante").innerHTML = "Inmigrantes = 83.561 personas"
     document.getElementById("viv_colectivas").innerHTML = "Cantidad = 1.486 viviendas"
 }
