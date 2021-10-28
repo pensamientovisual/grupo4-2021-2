@@ -1,16 +1,10 @@
 $(document).ready(function () {
   var bubbleChart = new d3.svg.BubbleChart({
     supportResponsive: true,
-    //container: => use @default
     size: 600,
-    //viewBoxSize: => use @default
     innerRadius: 600 / 3.5,
-    //outerRadius: => use @default
     radiusMin: 50,
-    //radiusMax: use @default
-    //intersectDelta: use @default
-    //intersectInc: use @default
-    //circleColor: use @default
+
     data: {
       items: [
         {text: "Atacama", count: "1"},
@@ -32,7 +26,7 @@ $(document).ready(function () {
         name: "lines",
         options: {
           format: [
-            {// Line #0
+            {
               textField: "count",
               classed: {count: true},
               style: {
@@ -47,7 +41,7 @@ $(document).ready(function () {
                 y: function (d) {return d.cy;}
               }
             },
-            {// Line #1
+            {
               textField: "text",
               classed: {text: true},
               style: {
@@ -64,11 +58,11 @@ $(document).ready(function () {
             }
           ],
           centralFormat: [
-            {// Line #0
+            {
               style: {"font-size": "50px"},
               attr: {}
             },
-            {// Line #1
+            {
               style: {"font-size": "30px"},
               attr: {dy: "40px"}
             }
