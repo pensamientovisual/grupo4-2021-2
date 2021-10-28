@@ -32,7 +32,7 @@ function ta(){
     document.getElementById("areas_verdes").innerHTML = "Parques = 46 ha"
     document.getElementById("pob_migrante").innerHTML = "Inmigrantes = 60.927 personas"
     document.getElementById("viv_colectivas").innerHTML = "Cantidad = 359 viviendas"
-    document.getElementById("CL-TA").color.fillColor = "white"
+    
 
 }
 
