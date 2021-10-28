@@ -9,6 +9,7 @@
     <script type="text/javascript" src="javascript.js"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     
+    
 
     <title>Grupo 4</title>
 </head>
@@ -38,8 +39,9 @@
         comparándola con la distribución de los inmigrantes a través del país. 
         Los escogidos fueron la cantidad de parques medidos en metros cuadrados
         y la cantidad de viviendas sociales. El análisis de los datos se realizará 
-        en dos instancias, la primera con una representación visual en el mapa 
-        chileno y la segunda a través de un gráfico interactivo.</p>
+        en tres instancias, la primera con una comparación entre las regiones 
+        del territorio chileno, la segunda a través de un mapa interactivo, y la tercera por medio de gráficos que exponen
+        información sobre la superficie de áreas verdes por habitante.</p>
         </td>
         </tr>
         </table>
@@ -49,7 +51,10 @@
 -->
     </div>
 
+
+
     <h1 align="center">Comparación entre regiones</h1>
+    
     <svg class="chart" width="1300" height="590" aria-labelledby="graph-title" aria-describedby="graph-desc">
     <text transform="translate(0, 60)" class="yUnits">Porcentaje</text>
     </svg>
@@ -58,7 +63,11 @@
 
 
 
+
+
     <div id="mapas"> <!-- no sacar svgDiv-->
+
+    
       
         <div id="botones"> 
             <button style="height:40px;width:150px" onClick="bot_av()">Áreas verdes</button>
@@ -68,8 +77,8 @@
 
 
         <br>
-        <div id="recuadro" style="width:500px;height:220px;border:3px solid #000;fill:white;position:relative;left:40px;top:200px">  
-            <h2 id="nombre_region">Nombre region</h1>
+        <div class="recuadro" style="width:450px;height:250px;border:3px solid #000;fill:white;position:relative;left:40px;top:200px">  
+            <button id="kk" type="button"> <h2 id="nombre_region">Nombre region</h2></button>
             <h3 id="areas_verdes">Áreas verdes</h3>
             <h3 id="pob_migrante">Poblacion inmigrante</h3>
             <h3 id="viv_colectivas">Viviendas colectivas</h3>
@@ -501,7 +510,9 @@
             </g>
 
         </svg>
-    <img src=barras_roja.png height="150px" width="60px">
+        
+        <img src=barras_roja.png height="150px" width="70px" style="position:relative;top:-8.5cm;margin-left:-2.5cm">
+        
     </div>
 
         <div id="svgDiv_av" class="svgMap" style="position:relative;top:-5cm">
@@ -710,7 +721,7 @@
 
             </g>
         </svg>
-        <img src=barras_verde.png height="150px" width="60px">
+        <img src=barras_verde.png height="150px" width="70px" style="position:relative;top:-8.5cm;margin-left:-2.5cm">
     </div>
 
         <div id="svgDiv_viv" class="svgMap" style="position:relative;top:-5cm">
@@ -920,12 +931,10 @@
 
             </g>
         </svg>
-        <img src=barras_azul.png height="150px" width="60px">
+        <img src=barras_azul.png height="150px" width="70px" style="position:relative;top:-8.5cm;margin-left:-2.5cm">
     </div> 
     
     </div>
-
-    
     
 
     <div id="chile">
@@ -943,21 +952,11 @@
 
   <p align = "center"> Las <strong>18 comunas</strong> que cumplen con el estándar propuesto se encuentran en las siguientes regiones: </p>
 
+  <div id="my" align="center"></div>
+  <script src='circulos.js' charset='utf-8'></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese" rel='stylesheet' type='text/css'>
-
-  <script src="https://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="https://phuonghuynh.github.io/js/bower_components/d3/d3.min.js"></script>
-  <script src="https://phuonghuynh.github.io/js/bower_components/d3-transform/src/d3-transform.js"></script>
-  <script src="https://phuonghuynh.github.io/js/bower_components/cafej/src/extarray.js"></script>
-  <script src="https://phuonghuynh.github.io/js/bower_components/cafej/src/misc.js"></script>
-  <script src="https://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
-  <script src="https://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
-  <script src="https://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
-  <script src="https://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
-  <script src="https://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
-  <div class="bubbleChart"></div>
-  <script src="burb.js"></script>
+    
+  
 
 
     <div class='mas_info'>

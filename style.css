@@ -5,7 +5,7 @@ body {
     margin-left: 2%;
     margin-right: 2%;
     padding: 0 20px 0;
-}/*hides tick marks on bottom xaxis */
+}
 
 html {
     height: 100%;
@@ -28,7 +28,7 @@ html {
     visibility:hidden;
   }
 
-/* hides bottom xaxis line*/
+
 .axis .domain {
 display: none;
 }
@@ -64,13 +64,6 @@ display: none;
 
 
 
-.bubbleChart{
-    min-width: 100px;
-    max-width: 700px;
-    height: 700px;
-    margin: 0 auto;
-}
-
 
 
 .mas_info{
@@ -95,11 +88,11 @@ footer {
       color: white;
       font-size: 20px;
       text-align: center;
-      font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+      font-family: 'Inter', sans-serif;
   }
 
 .info {
-      font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+      font-family: 'Inter', sans-serif;
 }
 
 #mapas {
@@ -124,15 +117,31 @@ footer {
     
 }
 
-#recuadro{
-    text-align: center;
-    background: white;
-    justify-content: center;
-    float: center;
-    align-items: center;
-    
-
+.recuadro {
+    position: relative;
+    display: block;
+    width: 300px;
+    min-height: 150px;
+    margin-top: 50px;
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.25);
 }
+
+#kk {
+    display: block;
+    border:#0052a1;
+    border-width: 0 10px;
+    border-radius: 0;
+    background: #0052a1;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: -60px auto 15px;
+    padding: 15px;
+   }
+
 
 
 

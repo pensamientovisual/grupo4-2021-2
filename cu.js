@@ -104,89 +104,84 @@ var econ2 = [
     }
   ]
   
-  //chart setup  editar grapppp
+
   var svg = d3.select("svg"),
       margin = {top: 75, right: 10, bottom: 80, left: 25},
       width = svg.attr("width") - margin.left - margin.right -350,
       height = svg.attr("height") - margin.top - margin.bottom,
       g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
   
-  //y position calculation function
+
   var y = d3.scaleLinear()
         .domain([0, 65])
         .range([height, 0]);
   
-  var x0 = d3.scaleBand()  // domain defined below
+  var x0 = d3.scaleBand() 
         .rangeRound([0, width +350 ])
         .paddingInner(0.1)
         .paddingOuter(0.1);
   
-  var x1 = d3.scaleBand()  // domain and range defined below
+  var x1 = d3.scaleBand()  
       .paddingOuter(0.3)
       .paddingInner(0.1);
-  
-  //blue, tan, red colors
+
   var z = d3.scaleOrdinal()
           .range(["green", "#ff674a", "#006acf"]);
   
-  //reference to the y axis
-  //axisLeft put labels on left side
-  //ticks(n) refers to # of increment marks on the axis
+
   const yAxis = d3.axisLeft(y).ticks(16);
-  
-  //examine first object, retrieve the keys, and discard the first key
-  //return resulting array of keys
-  // [ "2017 Q1", "Pob. Migrante", "Viv. Colectivas"]
+
+  // [ "Áreas verdes", "Pob. Migrante", "Viv. Colectivas"]
   var subCategories = Object.keys(econ2[0]).slice(1);
   
-  //use new array from just the Category values for the bottom x-axis
+  
   x0.domain(econ2.map( d =>  d.Category ));
   
-  //array of quarterly value names, fitted in the available bottom categories (x0.bandwidth())
+ 
   x1.domain(subCategories).rangeRound([0, x0.bandwidth()])
   
-  // Add bar chart
+
     var selection = g.selectAll("g")
       .data(econ2)
       .enter().append("g")
         .attr("transform", d => "translate(" + x0(d.Category) + ",0)" )
       selection.selectAll("rect")
-      //Use map function with the subCategories array and the Econ2 array
+     
        .data(function(d) { return subCategories.map(function(key) { return {key: key, value: d[key]}; }); })
         .enter().append("rect")
         .attr("x", d => x1(d.key) )
-      //If the value is negative, put the top left corner of the rect bar on the zero line
+  
         .attr("y", d => (d.value<0 ? y(0) : y(d.value)) )
         .attr("width", x1.bandwidth())
         .attr("height", d => Math.abs(y(d.value) - y(0)) )
         .attr("fill", d => z(d.key) )
-      //can not nest the text element inside the rect element !
+  
       selection.selectAll("text")
          .data(function(d) { return subCategories.map(function(key) { return {key: key, value: d[key]}; }); })
           .enter().append("text")
           .attr("x", d => x1(d.key) )
-      //offset the position of the y value (positive / negative) to have the text over/under the rect bar
+
           .attr("y", d => d.value<=0 ? y(0) - (y(4) - (Math.abs(y(d.value) - y(0)) + 20)) : y(d.value) - 10)
           .style('fill', d => z(d.key))
           //tamaño numeros arriba
           .style('font-size', '0.75em')
-      //make sure one just decimal place is displayed
+
           .text(d => Number.parseFloat(d.value).toFixed(1))
   
-  //add the x-axis
+  
   g.append("g")
       .attr("class", "axis")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x0))
       .selectAll(".tick text");
-      //use wrap function to wrap long lines in labels
+
       
   
-  //add the y-axis - notice it does not have css class 'axis'
+
   g.append('g')
   .call(yAxis)
   
-  //idenitfy zero line on the y axis.
+
   g.append("line")
       .attr("y1", y(0))
       .attr("y2", y(0))
